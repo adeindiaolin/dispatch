@@ -1,0 +1,9 @@
+{
+  "name": "dispatch",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "",
+    "url":"",
+    "querystring":""
+  }
+}
