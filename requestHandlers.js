@@ -29,5 +29,12 @@ function upload(response, postData) {
   response.end();
 }
 
+function helloKookoo(response, postData) {
+  response.writeHead(200, {"Content-Type": "text/plain"});
+  response.write("<response><playtext>I Love KooKoo</playtext><hangup></hangup></response>");
+  response.end();
+}
+
 exports.start = start;
 exports.upload = upload;
+exports.helloKookoo = helloKookoo;
