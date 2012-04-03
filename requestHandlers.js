@@ -31,7 +31,7 @@ function upload(response, postData) {
 
 function helloKookoo(response, postData) {
   response.writeHead(200, {"Content-Type": "text/plain"});
-  response.write("<response><playtext>I Love KooKoo</playtext><hangup></hangup></response>");
+  response.write("<response><playtext>Welcome to the dispatch rickshaw service. Your location is being gathered. We will dispatch a rickshaw momentarily. Please enjoy some music.</playtext><hangup></hangup></response>");
   response.end();
 }
 
