@@ -51,3 +51,7 @@ function delete_db(db, id){
   });
 }
 
+exports.db = db;
+exports.insert_db = insert_db;
+exports.delete_db = delete_db;
+exports.update_db = update_db;
