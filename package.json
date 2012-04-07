@@ -4,6 +4,9 @@
   "dependencies": {
     "express": "",
     "url":"",
-    "querystring":""
+    "querystring":"",
+    "couchdb":"",
+    "felix-couchdb":"",
+    "nano":""
   }
 }

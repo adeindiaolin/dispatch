@@ -21,7 +21,9 @@ function start(route, handle) {
 
   }
   var port = process.env.PORT || 8888;
-
+  var couchdb = require('couchdb'),
+      client = couchdb.createClient(5984, 'localhost'),
+      db = client.db('test');
   http.createServer(onRequest).listen(port);
   console.log(port);
   console.log("Server has started.");
