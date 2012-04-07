@@ -21,6 +21,7 @@ function insert_db(db, id, item) {
 // DO NOT USE AS CALLBACK
 function get_db(db, id) {
   db.get(id, function(err, val) {
+    if(err) {throw err;}
     console.log(id + ' = ', val);
   });
 }
@@ -44,10 +45,9 @@ function update_db(db, id, key, val){
 function delete_db(db, id){
   db.get(id, function(err, val) {
     db.destroy(id,val._rev, function(err, val){
-      if(err) {throw: err}
+      if(err) {throw err;}
       console.log(id + ' Destroyed');
     });
   });
 }
-
 
