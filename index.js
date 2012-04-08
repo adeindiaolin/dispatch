@@ -8,10 +8,7 @@ var handle = {}
 //handle["/start"] = requestHandlers.start;
 //handle["/upload"] = requestHandlers.upload;
 
-
-
-
-handle["/"] = requestHandlers.helloKookoo;
+handle["/"] = requestHandlers.kookooRequest;
 
 server.start(router.route, handle);
 get_db(db, 'apple');
