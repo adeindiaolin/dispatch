@@ -11,4 +11,3 @@ var handle = {}
 handle["/"] = requestHandlers.kookooRequest;
 
 server.start(router.route, handle);
-get_db(db, 'apple');
