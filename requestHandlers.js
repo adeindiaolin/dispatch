@@ -1,5 +1,11 @@
+var db_helper = require("./db_helper");
+var nano = require("nano");
+var db_couch= nano('http://admin:adeindia1000@dispatch.iriscouch.com/');
+var db_callers = db_couch.use('db_callers');
+var db_pullers = db_couch.use('db_pullers');
+
+
 var querystring = require("querystring");
-var db_callers = require("./db");
 
 function start(response, postData, queryParams) {
   console.log("Request handler 'start' was called.");

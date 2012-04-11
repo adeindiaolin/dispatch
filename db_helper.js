@@ -1,7 +1,3 @@
-var nano = require("nano");
-var db_couch= nano('http://admin:adeindia1000@dispatch.iriscouch.com/');
-var db = db_couch.use('dispatch');
-
 // CREATE A NEW DOCUMENT IN THE db
 //
 // db is the nano's db object
@@ -51,7 +47,6 @@ function delete_db(db, id){
   });
 }
 
-exports.db = db;
 exports.insert_db = insert_db;
 exports.delete_db = delete_db;
 exports.update_db = update_db;
